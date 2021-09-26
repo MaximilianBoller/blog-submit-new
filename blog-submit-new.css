@@ -1,0 +1,109 @@
+
+body,
+html{
+    background-color: #D6EFF6;
+
+}
+
+
+
+.editor, 
+.viewport{
+    border: black solid 1px;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+.site-content{
+    column-gap: 1rem;
+    row-gap: 1rem;
+    display: grid;
+    padding: 1rem;
+}
+
+
+
+.input-label{
+    padding: .5rem;
+    background-color: black;
+    color: lightgray;
+    width: fit-content;
+}
+
+.subheader{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subheader > h6{
+    padding: 1rem 1rem;
+    border: solid gray 0px;
+
+}
+
+
+
+
+
+
+.input-field,
+.input-textarea{
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    border: solid black 1px;
+    font-size: 1rem;
+
+    background-color: black;
+    color: white;
+
+    font-family: 'Source Code Pro', monospace;
+}
+
+.input-textarea{
+    height: 80vh;
+    resize: none;
+
+}
+
+.input-field:hover,
+.input-field:focus,
+.input-textarea:hover,
+.input-textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+.section-header{
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-paragraph{
+    margin: 1rem;
+    border-left: solid black 2px;
+    padding-left: 0.5rem;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+    .site-content{
+        flex-direction: row;
+    }
+
+    .site-content{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+}
